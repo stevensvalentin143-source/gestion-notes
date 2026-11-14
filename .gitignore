@@ -1,0 +1,8 @@
+ Python
+__pycache__/
+*.pyc
+venv/
+.pytest_cache/
+  Secrets et fichiers locaux
+.env
+*.d
