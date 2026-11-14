@@ -17,7 +17,7 @@ def mention(note):
     if note >= 12:
         return "Assez bien"
     if note >= 10:
-        return "faux"
+        return "Passable"
     return "Ajourné"
 def meilleure_note(notes):
     """retourne la note la plus élevée d'une liste."""
