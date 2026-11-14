@@ -12,7 +12,7 @@ def mention(note):
     """Mention obtenue pour une moyenne sur 20."""
     if note >= 17:
         return "Très bien"
-    if note >= 14:
+    if note >= 14.5:
         return "Bien"
     if note >= 12:
         return "Assez bien"
