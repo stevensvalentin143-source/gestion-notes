@@ -10,7 +10,7 @@ def moyenne(notes):
 
 def mention(note):
     """Mention obtenue pour une moyenne sur 20."""
-    if note >= 16:
+    if note >= 17:
         return "Très bien"
     if note >= 14:
         return "Bien"
@@ -22,5 +22,5 @@ def mention(note):
 def meilleure_note(notes):
     """retourne la note la plus élevée d'une liste."""
     if not notes:
-        raise valueError("la liste de notes est vide")
+        raise ValueError("la liste de notes est vide")
     return max(notes)
