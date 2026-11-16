@@ -1,4 +1,4 @@
-import pytest
+﻿import pytest
 from notes import mention, moyenne, meilleure_note, rang
 
 
