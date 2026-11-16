@@ -1,3 +1,4 @@
+
 """Petit module de gestion de notes d'étudiants."""
 
 
@@ -19,8 +20,15 @@ def mention(note):
     if note >= 10:
         return "Passable"
     return "Ajourné"
+
+
 def meilleure_note(notes):
-    """retourne la note la plus élevée d'une liste."""
+    """Retourne la note la plus élevée d'une liste."""
     if not notes:
-        raise ValueError("la liste de notes est vide")
+        raise ValueError("La liste de notes est vide")
     return max(notes)
+
+
+def rang(note, notes):
+    """Renvoie le rang d'un étudiant dans la classe."""
+    return 1 + sum(n > note for n in notes)
